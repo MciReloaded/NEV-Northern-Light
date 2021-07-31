@@ -84,19 +84,19 @@ item_path: /obj/item/clothing/head/hardhat/visor/pinkwaffle
 
 {
 ckey: PantherPusher
-character_name: Matthias Qubassi
+character_name: Matthias Kupalli
 item_path: /obj/item/weapon/gun/energy/modkit/catgun
 }
 
 {
 ckey: PantherPusher
-character_name: Matthias Qubassi
+character_name: Matthias Kupalli
 item_path: /obj/item/weapon/gun/energy/modkit/catgun
 }
 
 {
 ckey: PantherPusher
-character_name: Matthias Qubassi
+character_name: Matthias Kupalli
 item_path: /obj/item/weapon/reagent_containers/food/snacks/fortunecookie/catcookie
 }
 
