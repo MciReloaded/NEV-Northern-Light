@@ -97,7 +97,7 @@
 
 ///datum/reagent/toxin/blattedin is defined in blattedin.dm
 
-/datum/reagent/toxin/phoron
+/datum/reagent/toxin/plasma
 	name = "phoron"
 	id = "phoron"
 	description = "phoron in its liquid form."
@@ -208,6 +208,7 @@
 	if(holder && holder.my_atom && ismob(holder.my_atom))
 		var/mob/M = holder.my_atom
 		M.status_flags &= ~FAKEDEATH
+		M.timeofdeath = 0
 	. = ..()
 
 /datum/reagent/toxin/fertilizer //Reagents used for plant fertilizers.
@@ -442,7 +443,7 @@
 	M.cut_overlays()
 	M.invisibility = 101
 	for(var/obj/item/W in M)
-		if(istype(W, /obj/item/weapon/implant)) //TODO: Carn. give implants a dropped() or something
+		if(istype(W, /obj/item/implant)) //TODO: Carn. give implants a dropped() or something
 			qdel(W)
 			continue
 		W.layer = initial(W.layer)

@@ -59,7 +59,9 @@
 	icon_state = "wood"
 	initial_flooring = /decl/flooring/wood
 
-
+/turf/simulated/floor/wood/Initialize()
+	icon_state = pick("wood", "wood1", "wood2")
+	return ..()
 
 
 
@@ -346,7 +348,7 @@
 	oxygen = ATMOSTANK_OXYGEN
 	nitrogen = 0
 
-/turf/simulated/floor/reinforced/phoron
+/turf/simulated/floor/reinforced/plasma
 	oxygen = 0
 	nitrogen = 0
 	phoron = ATMOSTANK_PHORON
