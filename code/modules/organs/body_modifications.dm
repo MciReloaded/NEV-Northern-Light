@@ -192,6 +192,14 @@ var/global/list/modifications_types = list(
 	name = "Xion"
 	desc = "Prosthesis with minimalist black and red casing."
 	prosthetic_model = "xion"
+
+/datum/body_modification/limb/prosthesis/onestar // Eclipse edit to return OneStar prosthesis using the Eclipse system.
+	id = "prosthesis_onestar"
+	replace_limb = /obj/item/organ/external/robotic
+	icon = 'icons/mob/human_races/cyberlimbs/onestar/one_star_main.dmi'
+	name = "Experimental"
+	desc = "An experimental prosthetic using hard light to simulate a working limb."
+	prosthetic_model = "one_star"
 /*
 /datum/body_modification/limb/prosthesis/moebius
 	id = "prosthesis_moebius"
