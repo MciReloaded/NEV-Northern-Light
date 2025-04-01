@@ -96,12 +96,14 @@ The module base code is held in module.dm
 /obj/item/implant/core_implant/soulcrypt/activate()
 	if(!has_stored_info)
 		host_mind = wearer.mind
+		dna_trace = wearer.dna_trace
 		host_age = wearer.age
 		host_flavor_text = wearer.flavor_text
 		has_stored_info = TRUE
 		host_name = wearer.real_name
 		host_stats = wearer.stats
 		store_host_languages()
+
 	stat = SOULCRYPT_ONLINE
 
 	if(!wearer.mind || hacked_snatcher) //We're in a blank body. Or we're a bad person.
